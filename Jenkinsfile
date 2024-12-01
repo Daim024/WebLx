@@ -14,6 +14,15 @@ pipeline {
             }
         }
 
+             stage('Run JS Test') {
+            steps {
+                script {
+                    def result = sh(script: 'node test.js', returnStatus: true)
+                }
+            }
+        }
+
+
         stage('Deploy') {
             steps {
                 script {
