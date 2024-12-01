@@ -9,14 +9,23 @@ pipeline {
             }
         }
 
-    }
 
-     stage('Build Docker Image') {
+
+         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t daim00047920/repositoriodocker:v1 -f Dockerfile .'
     
             }
         }
+
+
+
+
+        
+
+    }
+
+    
 
 
     post {
