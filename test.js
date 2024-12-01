@@ -1,10 +1,11 @@
 // test.js
 
-const numero = 10; // Puedes cambiar este valor para probar el error
+const texto = "Poneme 10"; // Cambia este texto para probar
+const numero = "10"; // Número esperado en el texto
 
-if (numero !== 10) {
-    console.error('¡Error! El número no es 10. El valor es ${numero}.');
+if (!texto.includes(numero)) {
+    console.error(`¡Error! La frase no contiene el número "${numero}".`);
     process.exit(1); // Salir con un código de error
 }
 
-console.log("El número es 10.");
+console.log(`La frase contiene el número "${numero}". Test exitoso.`);
