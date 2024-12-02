@@ -1,4 +1,4 @@
-const texto = "Tengo 10"; // Cambia este texto para probar
+const texto = "Tengo 0"; // Cambia este texto para probar
 const numero = "10"; // Número esperado en el texto
 
 if (!texto.includes(numero)) {
