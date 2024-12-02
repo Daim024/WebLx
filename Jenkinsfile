@@ -53,7 +53,7 @@ pipeline {
 
                     echo "Descargando e iniciando contenedor desde Docker Hub..."
                     sh 'docker pull daim00047920/repositoriodocker:v1'
-                    //sh 'docker run -d -p 80:80 daim00047920/repositoriodocker:v1'
+                    sh 'docker run -d -p 80:80 daim00047920/repositoriodocker:v1'
 
                     echo "Contenedor desplegado correctamente."
                 }

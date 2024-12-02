@@ -1,5 +1,3 @@
-// test.js
-
 const texto = "Tengo 10"; // Cambia este texto para probar
 const numero = "10"; // Número esperado en el texto
 
